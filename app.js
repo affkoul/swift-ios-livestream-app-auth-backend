@@ -15,10 +15,10 @@ const mysql = require("mysql");
 
 let bodyParser = require("body-parser");
 let connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "K140790k@.",
-  database: "teacher_stream",
+  host: "mysql db IP",
+  user: "mysql user",
+  password: "password",
+  database: "mysql db name",
 });
 
 connection.connect((err) => {
@@ -29,7 +29,7 @@ connection.connect((err) => {
 global.db = connection;
 
 // all environments
-app.set("port", process.env.PORT || 53);
+app.set("port", process.env.PORT || 500);
 app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -67,4 +67,4 @@ https
     },
     app
   )
-  .listen(53);
+  .listen(500);
