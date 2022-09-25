@@ -5,7 +5,7 @@ iOS Native Swift Livestream App Auth Backend.
 
 2. Run npm install to install dependencies.
 
-3. Open app.js and configure db credentials properly.
+3. Open app.js, configure db credentials properly, set SERVER SSL KEY PATH and SERVER SSL CRT PATH to their respective path.
 
 4. Run node app.js to start the server.
 

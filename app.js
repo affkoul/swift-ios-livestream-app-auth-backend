@@ -61,8 +61,8 @@ app.get("/home/profile", user.profile); //to render users profile
 https
   .createServer(
     {
-      key: fs.readFileSync("./geniusandcourage.com_key.pem"),
-      cert: fs.readFileSync("./geniusandcourage.com_cert.pem"),
+      key: fs.readFileSync("SERVER SSL KEY PATH"),
+      cert: fs.readFileSync("SERVER SSL CRT PATH"),
       passphrase: "",
     },
     app
